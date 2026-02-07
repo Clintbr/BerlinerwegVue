@@ -25,7 +25,7 @@ export const useCourseStore = defineStore('courses', {
                 title: 'Débutant (Einstieg)',
                 description: 'Apprenez les bases de la communication : se présenter, commander au restaurant, et la grammaire fondamentale.',
                 duration: '2 mois',
-                startDate: '15 Février 2025',
+                startDate: '15 Février 2026',
                 icon: 'nav.school'
             },
             {
@@ -34,7 +34,7 @@ export const useCourseStore = defineStore('courses', {
                 title: 'Élémentaire (Grundlagen)',
                 description: 'Approfondissez vos connaissances et devenez capable de comprendre des expressions fréquentes.',
                 duration: '2 mois',
-                startDate: '15 Février 2025',
+                startDate: '15 Février 2026',
                 icon: 'nav.school'
             },
             {
@@ -43,7 +43,7 @@ export const useCourseStore = defineStore('courses', {
                 title: 'Intermédiaire (Zertifikat Deutsch B1)',
                 description: 'Le niveau requis pour de nombreux visas. Communication fluide dans la vie quotidienne et professionnelle.',
                 duration: '2,5 mois',
-                startDate: '15 Février 2025',
+                startDate: '15 Février 2026',
                 icon: 'nav.school'
             },
             {
@@ -52,7 +52,7 @@ export const useCourseStore = defineStore('courses', {
                 title: 'Intermédiaire supérieur (Zertifikat Deutsch B2)',
                 description: 'Comprendre et interagir avec un allemand avancé dans un contexte professionnel et académique.',
                 duration: '2,5 mois',
-                startDate: '15 Mars 2025',
+                startDate: '15 Mars 2026',
                 icon: 'nav.school'
             },
             {
@@ -60,8 +60,17 @@ export const useCourseStore = defineStore('courses', {
                 level: 'C1',
                 title: 'Avancé (Zertifikat Deutsch C1)',
                 description: 'Maîtrise de la langue pour des études universitaires et des situations professionnelles complexes.',
-                duration: '5 mois',
-                startDate: '15 Septembre 2025',
+                duration: '2,5 mois',
+                startDate: '15 Septembre 2026',
+                icon: 'nav.school'
+            },
+            {
+                id: 'X',
+                level: 'B1/B2/C1',
+                title: 'Préparation (Vorbereitungskurse)',
+                description: 'Préparation aux examens de langue Goethe, ÖSD. Gratuit pour les internes ',
+                duration: '1 mois',
+                startDate: 'tous les mois 2026',
                 icon: 'nav.school'
             }
         ] as Course[],

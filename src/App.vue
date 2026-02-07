@@ -3,9 +3,11 @@
     <Sidebar @toggle-collapse="onSidebarToggle" />
 
     <main
-        :class="[
+      :class="[
         'flex-1 transition-all duration-500 ease-in-out min-w-0 flex flex-col',
-        isSidebarCollapsed ? 'lg:ml-20' : 'lg:ml-72'
+        // On n'ajoute la marge à gauche que sur les grands écrans (Desktop)
+        isSidebarCollapsed ? 'lg:ml-20' : 'lg:ml-72',
+        'ml-0' // Par défaut sur mobile, pas de marge
       ]"
     >
       <div class="flex-1 p-4 md:p-8">

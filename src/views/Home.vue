@@ -12,9 +12,12 @@
         <p class="text-blue-100 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed mb-10">
           Arrêtez de croire que c'est un luxe réservé aux autres. Étudier ou travailler en Allemagne est un projet qui se prépare avec les bons experts.
         </p>
-        <button class="bg-white text-berlin-blue font-bold px-10 py-4 rounded-xl hover:bg-berlin-gold transition-colors duration-300">
+        <a :href="url" target="_blank" class="bg-white text-berlin-blue font-bold px-10 py-4 rounded-xl hover:bg-berlin-gold transition-colors duration-300">
           Brisez les mythes : Consultation 100% Gratuite
-        </button>
+        </a>
+        <p class="text-blue-100 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed mt-10">
+          Veuillez nous contacter via whatsapp ou par mail ou alors réserver directement un cours depuis la section 'formation'
+        </p>
       </div>
     </section>
     <section class="max-w-7xl mx-auto px-6 py-20">
@@ -41,7 +44,7 @@
         <div v-reveal class="group h-64 preserve-3d transition-transform duration-500 hover:rotate-x-12">
           <div class="absolute inset-0 bg-berlin-blue rounded-[2rem] p-8 shadow-lg flex flex-col justify-center items-center text-center">
             <div class="mb-4 p-3 bg-white/10 rounded-full text-berlin-gold">
-              <AppIcon name="shield-check-outline" size="32" />
+              <AppIcon name="shield" size="32" />
             </div>
             <h3 class="font-title font-bold text-white mb-2">Accompagnement Réel</h3>
             <p class="text-sm text-blue-100 leading-relaxed">
@@ -53,7 +56,7 @@
         <div v-reveal class="group h-64 preserve-3d transition-transform duration-500 hover:rotate-x-12">
           <div class="absolute inset-0 bg-white border border-berlin-light rounded-[2rem] p-8 shadow-sm group-hover:shadow-xl group-hover:border-berlin-gold/30 transition-all flex flex-col justify-center items-center text-center">
             <div class="mb-4 p-3 bg-berlin-light rounded-full text-berlin-blue group-hover:bg-berlin-gold group-hover:text-berlin-blue transition-colors">
-              <AppIcon name="chat-question-outline" size="32" />
+              <AppIcon name="message" size="32" />
             </div>
             <h3 class="font-title font-bold text-berlin-blue mb-2">Consultation 100% Gratuite</h3>
             <p class="text-sm text-berlin-grey leading-relaxed">
@@ -115,7 +118,7 @@
         <div class="flex flex-col bg-berlin-blue rounded-3xl shadow-xl transform md:-translate-y-4">
           <div class="p-8">
             <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mb-6">
-              <AppIcon name="account-voice" size="24" class="text-berlin-gold" />
+              <AppIcon name="passport" size="24" class="text-berlin-gold" />
             </div>
             <h3 class="text-xl font-bold text-white mb-4">Entretien de Visa</h3>
             <p class="text-blue-100 text-sm leading-relaxed">
@@ -157,7 +160,10 @@
 </template>
 
 <script setup lang="ts">
-import AppIcon from '../components/AppIcon.vue'
+import AppIcon from '@/components/AppIcon.vue'
+import whatsappUrl from "@/utils/whatsapp";
+
+const url = whatsappUrl
 
 const otherServices = [
   "Cours intensifs / Cours du soir",

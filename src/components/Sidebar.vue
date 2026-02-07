@@ -1,4 +1,11 @@
 <template>
+  <button
+      @click="isMobileOpen = true"
+      class="lg:hidden fixed top-4 left-4 z-[60] p-3 bg-white/80 backdrop-blur-md border border-berlin-light rounded-2xl shadow-xl text-berlin-blue hover:scale-110 active:scale-95 transition-all"
+  >
+    <AppIcon name="menu" size="24" />
+  </button>
+
   <transition name="fade">
     <div v-if="isMobileOpen" @click="isMobileOpen = false" class="fixed inset-0 bg-berlin-blue/20 backdrop-blur-sm z-40 lg:hidden"></div>
   </transition>
@@ -11,15 +18,15 @@
     ]"
   >
     <button
-        @click="isCollapsed = !isCollapsed"
-        class="hidden lg:flex absolute -right-3 top-10 w-6 h-6 bg-berlin-blue text-berlin-gold rounded-full items-center justify-center shadow-lg hover:scale-110 transition-transform"
+        @click="handleToggle"
+        class="absolute -right-3 top-10 w-6 h-6 bg-berlin-blue text-berlin-gold rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
     >
-      <AppIcon :name="isCollapsed ? 'ui.chevron-right' : 'ui.close'" size="14" />
+      <AppIcon :name="isMobileOpen ? 'close' : (isCollapsed ? 'chevron-right' : 'close')" size="14" />
     </button>
 
     <div class="py-8 flex flex-col items-center overflow-hidden">
-      <div class="p-3 bg-berlin-blue rounded-xl shadow-lg transition-all duration-500" :class="isCollapsed ? 'scale-75' : 'scale-100'">
-        <AppIcon name="nav.school" size="32" class="text-berlin-gold" />
+      <div class="p-3 bg-berlin-light rounded-xl shadow-lg transition-all duration-500" :class="isCollapsed ? 'scale-75' : 'scale-100'">
+        <img src="../../public/favicon.ico" alt="Logo" style="width:50px; height:50px;">
       </div>
       <transition name="fade">
         <div v-if="!isCollapsed" class="mt-4 text-center whitespace-nowrap">
@@ -30,7 +37,10 @@
 
     <nav class="flex-1 px-3 space-y-2">
       <router-link
-          v-for="item in menuItems" :key="item.path" :to="item.path"
+          v-for="item in menuItems"
+          :key="item.path"
+          :to="item.path"
+          @click="isMobileOpen = false"
           class="relative flex items-center h-12 rounded-xl transition-all duration-300 group hover:bg-berlin-blue hover:text-white text-berlin-grey overflow-hidden"
           active-class="bg-berlin-blue !text-white shadow-lg shadow-berlin-blue/30"
       >
@@ -43,7 +53,7 @@
           </span>
         </transition>
 
-        <div v-if="isCollapsed" class="absolute left-16 bg-berlin-blue text-white px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity">
+        <div v-if="isCollapsed" class="hidden lg:block absolute left-16 bg-berlin-blue text-white px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity">
           {{ item.name }}
         </div>
       </router-link>
@@ -58,15 +68,21 @@ import AppIcon from './AppIcon.vue'
 const isCollapsed = ref(false)
 const isMobileOpen = ref(false)
 
-// Émettre l'état pour que le contenu principal s'ajuste
 const emit = defineEmits(['toggle-collapse'])
 watch(isCollapsed, (val) => emit('toggle-collapse', val))
 
+const handleToggle = () => {
+  if (window.innerWidth < 1024) {
+    isMobileOpen.value = false
+  } else {
+    isCollapsed.value = !isCollapsed.value
+  }
+}
+
 const menuItems = [
-  { name: 'Accueil', path: '/', icon: 'home' }, // au lieu de 'nav.home'
+  { name: 'Accueil', path: '/', icon: 'home' },
   { name: 'Formations', path: '/courses', icon: 'school' },
-  { name: 'Visa', path: '/admission', icon: 'account' }, // ou le nom trouvé
-  { name: 'Contact', path: '/contact', icon: 'email' },
+  { name: 'Visa', path: '/admission', icon: 'passport' },
 ]
 </script>
 

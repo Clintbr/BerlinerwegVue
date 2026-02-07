@@ -61,7 +61,7 @@
         <div class="space-y-4">
           <div class="flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm">
             <AppIcon name="translate" class="text-berlin-gold" size="24"/>
-            <span class="text-berlin-blue font-medium">Traduction & Interprétation (Fr/All)</span>
+            <span class="text-berlin-blue font-medium">Traduction & Interprétation (Fr/En/De)</span>
           </div>
           <div class="flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm">
             <AppIcon name="briefcase-outline" class="text-berlin-gold" size="24"/>
@@ -71,7 +71,7 @@
       </div>
       <div class="flex flex-col justify-center items-start space-y-4">
         <p class="text-berlin-grey italic">"Comprenez la procédure de A à Z sans dépenser un franc lors de votre consultation initiale."</p>
-        <button class="btn-primary" @click="contactExpert">Prendre rendez-vous gratuitement</button>
+        <a class="btn-primary" :href="url" target="_blank"> Prendre rendez-vous gratuitement </a>
       </div>
     </section>
     <section id="service-admission" v-reveal class="max-w-6xl mx-auto px-6 py-20">
@@ -341,8 +341,10 @@
 <script setup lang="ts">
 import { useUiStore } from '../store/ui'
 import AppIcon from "@/components/AppIcon.vue";
+import whatsappUrl from "@/utils/whatsapp";
 
 const uiStore = useUiStore()
+const url = whatsappUrl
 
 const contactExpert = () => {
   // Redirige vers la page contact ou ouvre la modal
