@@ -12,9 +12,16 @@
         <p class="text-blue-100 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed mb-10">
           Arrêtez de croire que c'est un luxe réservé aux autres. Étudier ou travailler en Allemagne est un projet qui se prépare avec les bons experts.
         </p>
-        <a :href="url" target="_blank" class="bg-white text-berlin-blue font-bold px-10 py-4 rounded-xl hover:bg-berlin-gold transition-colors duration-300">
-          Brisez les mythes : Consultation 100% Gratuite
-        </a>
+        <div class="flex justify-center">
+          <a
+              :href="url"
+              target="_blank"
+              class="inline-flex items-center justify-center bg-white text-berlin-blue font-bold px-6 md:px-10 py-4 rounded-xl hover:bg-berlin-gold hover:text-white transition-all duration-300 w-full md:w-auto text-sm md:text-base shadow-lg"
+          >
+            <span class="md:hidden">Consultation 100% Gratuite</span>
+            <span class="hidden md:inline">Brisez les mythes : Consultation 100% Gratuite</span>
+          </a>
+        </div>
         <p class="text-blue-100 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed mt-10">
           Veuillez nous contacter via whatsapp ou par mail ou alors réserver directement un cours depuis la section 'formation'
         </p>
