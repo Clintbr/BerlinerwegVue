@@ -147,6 +147,79 @@
 
       </div>
     </section>
+    <section v-reveal class="max-w-7xl mx-auto px-6 py-24">
+      <div class="text-center mb-16">
+        <span class="text-berlin-gold font-bold tracking-[0.3em] uppercase text-xs">L'Expérience Berliner Weg</span>
+        <h2 class="text-4xl md:text-5xl font-title text-berlin-blue mt-4">Plus qu'une simple école de langue</h2>
+        <p class="text-berlin-grey mt-4 max-w-2xl mx-auto font-light">
+          Nous créons un écosystème immersif pour que l'allemand devienne votre seconde nature, bien au-delà des livres de grammaire.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="group p-8 bg-white rounded-[2.5rem] border border-berlin-light hover:border-berlin-gold transition-all duration-500 shadow-sm hover:shadow-xl">
+          <div class="w-14 h-14 bg-berlin-light rounded-2xl flex items-center justify-center text-berlin-blue mb-6 group-hover:bg-berlin-blue group-hover:text-white transition-colors">
+            <AppIcon name="monitor" size="28" />
+          </div>
+          <h4 class="text-xl font-bold text-berlin-blue mb-3">Salle Multimédia</h4>
+          <p class="text-sm text-berlin-grey leading-relaxed">
+            Accès illimité à notre espace numérique pour vos recherches, vos exercices en ligne et vos projets personnels.
+          </p>
+        </div>
+
+        <div class="group p-8 bg-berlin-blue rounded-[2.5rem] shadow-xl text-white transform lg:-translate-y-4">
+          <div class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center text-berlin-gold mb-6">
+            <AppIcon name="usb" size="28" />
+          </div>
+          <h4 class="text-xl font-bold mb-3">Pack Ressources</h4>
+          <p class="text-sm text-blue-100/80 leading-relaxed">
+            Chaque étudiant reçoit une clé USB contenant une sélection de films, documentaires et supports pédagogiques allemands.
+          </p>
+        </div>
+
+        <div class="group p-8 bg-white rounded-[2.5rem] border border-berlin-light hover:border-berlin-gold transition-all duration-500 shadow-sm hover:shadow-xl">
+          <div class="w-14 h-14 bg-berlin-light rounded-2xl flex items-center justify-center text-berlin-blue mb-6 group-hover:bg-berlin-blue group-hover:text-white transition-colors">
+            <AppIcon name="gamepad-variant" size="28" />
+          </div>
+          <h4 class="text-xl font-bold text-berlin-blue mb-3">Apprentissage Ludique</h4>
+          <p class="text-sm text-berlin-grey leading-relaxed">
+            Des jeux interactifs conçus pour briser la glace et renforcer votre vocabulaire tout en vous amusant.
+          </p>
+        </div>
+
+        <div class="group p-8 bg-white rounded-[2.5rem] border border-berlin-light hover:border-berlin-gold transition-all duration-500 shadow-sm hover:shadow-xl">
+          <div class="w-14 h-14 bg-berlin-light rounded-2xl flex items-center justify-center text-berlin-blue mb-6 group-hover:bg-berlin-blue group-hover:text-white transition-colors">
+            <AppIcon name="earth" size="28" />
+          </div>
+          <h4 class="text-xl font-bold text-berlin-blue mb-3">Journées Culturelles</h4>
+          <p class="text-sm text-berlin-grey leading-relaxed">
+            Plongez dans les traditions, la gastronomie et l'histoire des pays germanophones lors de nos événements thématiques.
+          </p>
+        </div>
+
+        <div class="group p-8 bg-white rounded-[2.5rem] border border-berlin-light hover:border-berlin-gold transition-all duration-500 shadow-sm hover:shadow-xl">
+          <div class="w-14 h-14 bg-berlin-light rounded-2xl flex items-center justify-center text-berlin-blue mb-6 group-hover:bg-berlin-blue group-hover:text-white transition-colors">
+            <AppIcon name="high-definition-box" size="28" />
+          </div>
+          <h4 class="text-xl font-bold text-berlin-blue mb-3">Soirées Cinéma</h4>
+          <p class="text-sm text-berlin-grey leading-relaxed">
+            Projection de classiques et nouveautés du cinéma allemand suivies de débats pour affiner votre compréhension orale.
+          </p>
+        </div>
+
+        <div class="group p-8 bg-white rounded-[2.5rem] border border-berlin-light hover:border-berlin-gold transition-all duration-500 shadow-sm hover:shadow-xl">
+          <div class="w-14 h-14 bg-berlin-light rounded-2xl flex items-center justify-center text-berlin-blue mb-6 group-hover:bg-berlin-blue group-hover:text-white transition-colors">
+            <AppIcon name="newspaper" size="28" />
+          </div>
+          <h4 class="text-xl font-bold text-berlin-blue mb-3">Points de Presse</h4>
+          <p class="text-sm text-berlin-grey leading-relaxed">
+            Restez connectés à l'actualité allemande avec nos revues de presse hebdomadaires et analyses de médias germanophones.
+          </p>
+        </div>
+
+      </div>
+    </section>
 
     <section class="max-w-7xl mx-auto px-6">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

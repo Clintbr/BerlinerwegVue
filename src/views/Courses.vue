@@ -10,6 +10,17 @@
       </p>
     </header>
 
+    <div class="mt-12 flex justify-center pb-10">
+      <a
+          href="/brochure-berliner-weg.pdf"
+          download="Berliner_Weg_Brochure_2026.pdf"
+          class="flex items-center gap-3 bg-berlin-blue text-white px-10 py-4 rounded-xl shadow-xl shadow-berlin-blue/20 hover:bg-berlin-gold hover:scale-105 transition-all duration-300"
+      >
+        <AppIcon name="download" size="20" />
+        <span class="font-bold tracking-wide">Télécharger la brochure officielle</span>
+      </a>
+    </div>
+
     <section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
       <CourseCard
           v-for="course in courseStore.levels"
@@ -40,6 +51,7 @@
         @close="isModalOpen = false"
         @submit="processReservation"
     />
+
   </div>
 </template>
 
