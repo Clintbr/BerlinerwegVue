@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* Configuration du thème Berliner Weg */
+@theme {
+    --color-berlin-blue: #003d7e;
+    --color-berlin-gold: #ffcc00;
+    --color-berlin-accent: #0066cc;
+    --color-berlin-grey: #666666;
+    --color-berlin-light: #f2f2f2;
+
+    --font-title: "Montserrat", sans-serif;
+    --font-body: "Open Sans", sans-serif;
+}
+
+/* Styles de base */
+@layer base {
+    body {
+        @apply font-body bg-white text-berlin-grey;
+    }
+
+    h1, h2, h3 {
+        @apply font-title font-bold text-berlin-blue uppercase tracking-tight;
+    }
+}
+
+/* Composants réutilisables (Boutons de la charte) */
+@layer components {
+    .btn-primary {
+        @apply bg-berlin-gold text-berlin-blue font-title font-bold px-8 py-3
+        rounded-md transition-all hover:scale-105 active:scale-95
+        shadow-md hover:shadow-berlin-gold/20;
+    }
+
+    .btn-outline {
+        @apply border-2 border-berlin-blue text-berlin-blue font-title font-bold
+        px-8 py-3 rounded-md hover:bg-berlin-blue hover:text-white transition-colors;
+    }
+}
+
+/* src/assets/styles/globals.css */
+@layer utilities {
+    .perspective-1000 {
+        perspective: 1000px;
+    }
+    .preserve-3d {
+        transform-style: preserve-3d;
+    }
+    .backface-hidden {
+        backface-visibility: hidden;
+    }
+    .rotate-y-180 {
+        transform: rotateY(180deg);
+    }
+}
