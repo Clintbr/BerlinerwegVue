@@ -49,8 +49,8 @@
         </div>
 
         <button
-            @click.stop="$emit('reserve', course)"
-            class="btn-primary w-full mt-6 shadow-lg shadow-berlin-gold/20 z-10"
+            @click.stop="$emit('reserve', course.id)"
+            class="btn-primary w-full mt-6 shadow-lg shadow-berlin-gold/20 z-50 relative"
         >
           Réserver ma place
         </button>
