@@ -1,38 +1,87 @@
-# berlinerwegvue
+# 🇩🇪 Berliner Weg - La Clé du Visa Allemand
 
-This template should help get you started developing with Vue 3 in Vite.
+**Berliner Weg** est une plateforme web moderne conçue pour un institut de langue allemande basé à Yaoundé. Le site permet aux étudiants de découvrir les formations, de consulter les tarifs officiels et de réserver des cours ou des consultations pour la mobilité vers l'Allemagne.
 
-## Recommended IDE Setup
+---
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🚀 Aperçu du Projet
 
-## Recommended Browser Setup
+L'application est bâtie avec une architecture **Vue.js 3** performante, offrant une expérience utilisateur fluide ("Single Page Application") et un design premium inspiré de la rigueur et de l'élégance allemande.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+### ✨ Fonctionnalités Clés
 
-## Customize configuration
+* **Catalogue de Formations** : Présentation interactive des niveaux (A1 à C2) avec cartes réversibles (tactiles/hover).
+* **Gestion des Visas** : Section dédiée aux procédures d'admission et de préparation aux entretiens.
+* **Réservation en Temps Réel** : Système de formulaire intégré avec notifications par email via **EmailJS**.
+* **Charte Tarifaire** : Modal de consultation des prix avec option de téléchargement de la brochure PDF officielle.
+* **Navigation Hybride** : Sidebar intelligente (réductible sur desktop, burger menu sur mobile).
+* **Contact Rapide** : Intégration d'un bouton flottant WhatsApp pour une conversion immédiate.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+## 🛠️ Stack Technique
 
-```sh
+* **Framework** : [Vue.js 3](https://vuejs.org/) (Composition API)
+* **Langage** : [TypeScript](https://www.typescriptlang.org/)
+* **Styles** : [Tailwind CSS](https://tailwindcss.com/)
+* **Icônes** : Lucide / Material Design Icons (via AppIcon component)
+* **Build Tool** : Vite
+* **Notifications** : EmailJS
+
+---
+
+## 📦 Installation & Développement
+
+Pour lancer le projet localement :
+
+1. **Cloner le dépôt** (nécessite une autorisation d'accès) :
+```bash
+git clone https://github.com/votre-compte/berliner-weg.git
+
+```
+
+
+2. **Installer les dépendances** :
+```bash
 npm install
+
 ```
 
-### Compile and Hot-Reload for Development
 
-```sh
+3. **Lancer le serveur de développement** :
+```bash
 npm run dev
+
 ```
 
-### Compile and Minify for Production
 
-```sh
+4. **Build pour la production** :
+```bash
 npm run build
+
 ```
+
+
+
+---
+
+## 🔒 Propriété Intellectuelle & Licence
+
+> [!IMPORTANT]
+> **Projet Privé - Droits Réservés**
+> Ce dépôt est la propriété exclusive de **Berliner Weg**.
+> * **Consultation** : Vous êtes autorisé à visiter et parcourir le code à des fins de revue ou de démonstration.
+> * **Fork & Copie** : Le fork, la reproduction, la modification ou la redistribution du code source, des actifs visuels (logos, brochure) et de l'identité graphique est **strictement interdit** sans accord écrit préalable.
+> * **Utilisation Commerciale** : Toute exploitation commerciale de ce projet par un tiers est prohibée.
+> 
+> 
+
+---
+
+## 📧 Contact
+
+Pour toute question technique ou demande de collaboration :
+
+* **Institut** : Berliner Weg (Yaoundé, Cameroun)
+* **Site Web** : [www.berlinerweg.com](https://berlinerweg.netlify.app/)
+* **Développeur** : [Votre Nom/Pseudo]
