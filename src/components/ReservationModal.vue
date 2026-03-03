@@ -33,7 +33,7 @@
 
           <div class="space-y-2">
             <label class="text-xs font-bold text-berlin-blue ml-2 tracking-wide">EMAIL</label>
-            <input v-model="form.email" type="email" required placeholder="john.doe@example.com"
+            <input v-model="form.email" type="email"  placeholder="john.doe@example.com"
                    class="w-full px-6 py-4 bg-berlin-light rounded-2xl border-none focus:ring-2 focus:ring-berlin-gold transition-all outline-none text-sm" />
           </div>
 
