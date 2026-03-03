@@ -25,7 +25,7 @@ export const useCourseStore = defineStore('courses', {
                 title: 'Débutant (Einstieg)',
                 description: 'Apprenez les bases de la communication : se présenter, commander au restaurant, et la grammaire fondamentale.',
                 duration: '2 mois',
-                startDate: '15 Février 2026',
+                startDate: '16 Mars 2026',
                 icon: 'nav.school'
             },
             {
@@ -34,7 +34,7 @@ export const useCourseStore = defineStore('courses', {
                 title: 'Élémentaire (Grundlagen)',
                 description: 'Approfondissez vos connaissances et devenez capable de comprendre des expressions fréquentes.',
                 duration: '2 mois',
-                startDate: '15 Février 2026',
+                startDate: '16 Mars 2026',
                 icon: 'nav.school'
             },
             {
@@ -43,7 +43,7 @@ export const useCourseStore = defineStore('courses', {
                 title: 'Intermédiaire (Zertifikat Deutsch B1)',
                 description: 'Le niveau requis pour de nombreux visas. Communication fluide dans la vie quotidienne et professionnelle.',
                 duration: '2,5 mois',
-                startDate: '15 Février 2026',
+                startDate: '16 Mars 2026',
                 icon: 'nav.school'
             },
             {
@@ -52,7 +52,7 @@ export const useCourseStore = defineStore('courses', {
                 title: 'Intermédiaire supérieur (Zertifikat Deutsch B2)',
                 description: 'Comprendre et interagir avec un allemand avancé dans un contexte professionnel et académique.',
                 duration: '2,5 mois',
-                startDate: '15 Mars 2026',
+                startDate: '16 Mars 2026',
                 icon: 'nav.school'
             },
             {
