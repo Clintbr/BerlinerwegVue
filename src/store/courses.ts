@@ -106,8 +106,8 @@ export const useCourseStore = defineStore('courses', {
             },
             {
                 id: 'p2',
-                title: 'Pack Munich (Formation Infirmiers)',
-                description: 'La totalité de nos formations de langue à moindre prix et un accompagnement total jusqu\'à obtention du contrat suivi du visa et d\'un accueil en grande pompe sur le territoire allemand',
+                title: 'Pack Münich (Formation Infirmiers)',
+                description: 'La totalité de nos formations de langue et un accompagnement total jusqu\'à obtention du contrat avec des Hôpitaux allemands, suivi du visa et d\'un accueil en grande pompe sur le territoire allemand',
                 items:  ['Cours de langue', 'A1-B2', 'Contrats des Écoles', 'Visa','frais d\'examens officiels non inclus'],
                 price: '2400 000 fcfa',
                 icon: 'wallet-giftcard',
@@ -115,7 +115,7 @@ export const useCourseStore = defineStore('courses', {
             {
                 id: 'p3',
                 title: 'Pack Berlin (Études et Recherche)',
-                description: 'La totalité de nos formations de langue à moindre prix et un accompagnement total jusqu\'à obtention du contrat suivi du visa et d\'un accueil en grande pompe sur le territoire allemand',
+                description: 'La totalité de nos formations de langue à moindre prix et un accompagnement total jusqu\'à obtention de l\'acceptation par les universités d\'Allemagne et jusqu\'au visa suivi d\'un accueil sur le territoire allemand',
                 items:  ['Cours de langue', 'A1-B2', 'Acceptation des Universités', 'Visa','frais d\'examens officiels non inclus'],
                 price: '2400 000 fcfa',
                 icon: 'wallet-giftcard',

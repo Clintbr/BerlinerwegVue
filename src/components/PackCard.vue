@@ -1,6 +1,6 @@
 <template>
   <div
-      class="group h-[450px] w-full perspective-1000 cursor-pointer"
+      class="group h-[550px] w-full perspective-1000 cursor-pointer"
       @click="isFlipped = !isFlipped"
   >
     <div
