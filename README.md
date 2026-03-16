@@ -84,4 +84,4 @@ Pour toute question technique ou demande de collaboration :
 
 * **Institut** : Berliner Weg (Yaoundé, Cameroun)
 * **Site Web** : [www.berlinerweg.com](https://berlinerweg.netlify.app/)
-* **Développeur** : [Votre Nom/Pseudo]
+* **Développeur** : Clint Bryan Nguena
