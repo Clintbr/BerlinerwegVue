@@ -45,6 +45,15 @@
                 Rentrée : {{ course.startDate }}
               </span>
             </div>
+
+            <div class="flex items-center gap-3 text-sm">
+              <div class="p-1.5 bg-berlin-gold/20 rounded-md">
+                <AppIcon name="home" size="16" class="text-berlin-gold" />
+              </div>
+              <span class="text-berlin-gold font-bold uppercase tracking-tight">
+                Prix : {{ course.price }}
+              </span>
+            </div>
           </div>
         </div>
 
@@ -71,6 +80,7 @@ interface Course {
   description: string;
   duration: string;
   startDate: string;
+  price?: string;
   icon: string;
 }
 

@@ -16,6 +16,13 @@ export interface Course extends BaseItem {
     price?: string
 }
 
+
+// Interface spécifique aux Packs
+export interface Packages extends BaseItem {
+    items: String[],
+    price?: string,
+}
+
 export const useCourseStore = defineStore('courses', {
     state: () => ({
         levels: [
@@ -26,7 +33,8 @@ export const useCourseStore = defineStore('courses', {
                 description: 'Apprenez les bases de la communication : se présenter, commander au restaurant, et la grammaire fondamentale.',
                 duration: '2 mois',
                 startDate: '16 Mars 2026',
-                icon: 'nav.school'
+                icon: 'nav.school',
+                price: '100 000 fcfa',
             },
             {
                 id: 'a2',
@@ -35,7 +43,8 @@ export const useCourseStore = defineStore('courses', {
                 description: 'Approfondissez vos connaissances et devenez capable de comprendre des expressions fréquentes.',
                 duration: '2 mois',
                 startDate: '16 Mars 2026',
-                icon: 'nav.school'
+                icon: 'nav.school',
+                price: '100 000 fcfa',
             },
             {
                 id: 'b1',
@@ -44,7 +53,8 @@ export const useCourseStore = defineStore('courses', {
                 description: 'Le niveau requis pour de nombreux visas. Communication fluide dans la vie quotidienne et professionnelle.',
                 duration: '2,5 mois',
                 startDate: '16 Mars 2026',
-                icon: 'nav.school'
+                icon: 'nav.school',
+                price: '120 000 fcfa',
             },
             {
                 id: 'b2',
@@ -53,7 +63,8 @@ export const useCourseStore = defineStore('courses', {
                 description: 'Comprendre et interagir avec un allemand avancé dans un contexte professionnel et académique.',
                 duration: '2,5 mois',
                 startDate: '16 Mars 2026',
-                icon: 'nav.school'
+                icon: 'nav.school',
+                price: '120 000 fcfa',
             },
             {
                 id: 'c1',
@@ -62,7 +73,8 @@ export const useCourseStore = defineStore('courses', {
                 description: 'Maîtrise de la langue pour des études universitaires et des situations professionnelles complexes.',
                 duration: '2,5 mois',
                 startDate: '15 Septembre 2026',
-                icon: 'nav.school'
+                icon: 'nav.school',
+                price: '130 000 fcfa',
             },
             {
                 id: 'X',
@@ -71,7 +83,8 @@ export const useCourseStore = defineStore('courses', {
                 description: 'Préparation aux examens de langue Goethe, ÖSD. Gratuit pour les internes ',
                 duration: '1 mois',
                 startDate: 'tous les mois 2026',
-                icon: 'nav.school'
+                icon: 'nav.school',
+                price: '20 000 fcfa',
             }
         ] as Course[],
         services: [
@@ -81,6 +94,32 @@ export const useCourseStore = defineStore('courses', {
                 description: 'Accompagnement complet pour la prise de rendez-vous et la constitution du dossier consulaire.',
                 icon: 'nav.passport'
             }
-        ] as BaseItem[]
+        ] as BaseItem[],
+        packs: [
+            {
+                id: 'p1',
+                title: 'Pack Francfort (Langue)',
+                description: 'La totalité de nos formations de langue allemande à moindre prix. Réservez directement pour les cours de tous les niveau de langue',
+                items:  ['A1', 'A2', 'B1', 'B2', 'C1','frais d\'examens officiels non inclus'],
+                price: '500 000 fcfa',
+                icon: 'translate',
+            },
+            {
+                id: 'p2',
+                title: 'Pack Munich (Formation Infirmiers)',
+                description: 'La totalité de nos formations de langue à moindre prix et un accompagnement total jusqu\'à obtention du contrat suivi du visa et d\'un accueil en grande pompe sur le territoire allemand',
+                items:  ['Cours de langue', 'A1-B2', 'Contrats des Écoles', 'Visa','frais d\'examens officiels non inclus'],
+                price: '2400 000 fcfa',
+                icon: 'wallet-giftcard',
+            },
+            {
+                id: 'p3',
+                title: 'Pack Berlin (Études et Recherche)',
+                description: 'La totalité de nos formations de langue à moindre prix et un accompagnement total jusqu\'à obtention du contrat suivi du visa et d\'un accueil en grande pompe sur le territoire allemand',
+                items:  ['Cours de langue', 'A1-B2', 'Acceptation des Universités', 'Visa','frais d\'examens officiels non inclus'],
+                price: '2400 000 fcfa',
+                icon: 'wallet-giftcard',
+            }
+        ] as Packages[]
     })
 })

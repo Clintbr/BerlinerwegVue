@@ -11,10 +11,9 @@ export const useUiStore = defineStore('ui', () => {
         snackbarType.value = type
         isSnackbarOpen.value = true
 
-        // Fermeture automatique après 4 secondes
         setTimeout(() => {
             isSnackbarOpen.value = false
-        }, 4000)
+        }, 6000)
     }
 
     return { isSnackbarOpen, snackbarMessage, snackbarType, showSnackbar }

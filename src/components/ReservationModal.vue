@@ -60,6 +60,7 @@ import AppIcon from './AppIcon.vue'
 const props = defineProps<{
   isOpen: boolean
   courseLevel: string
+  packTitle?: string
 }>()
 
 const emit = defineEmits(['close', 'submit'])
@@ -76,7 +77,7 @@ const close = () => {
 }
 
 const handleSubmit = () => {
-  emit('submit', { ...form, level: props.courseLevel })
+  emit('submit', { ...form, level: props.courseLevel, title: props.packTitle})
 
   // Réinitialisation propre
   form.nom = ''
