@@ -117,7 +117,7 @@ export const useCourseStore = defineStore('courses', {
                 title: 'Pack Berlin (Études et Recherche)',
                 description: 'La totalité de nos formations de langue à moindre prix et un accompagnement total jusqu\'à obtention de l\'acceptation par les universités d\'Allemagne et jusqu\'au visa suivi d\'un accueil sur le territoire allemand',
                 items:  ['Cours de langue', 'A1-B2', 'Acceptation des Universités', 'Visa','frais d\'examens officiels non inclus'],
-                price: '2400 000 fcfa',
+                price: '2000 000 fcfa',
                 icon: 'wallet-giftcard',
             }
         ] as Packages[]
